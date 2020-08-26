@@ -42,5 +42,5 @@ http://35.189.151.113:3000/payment
 >>### Response
 >#### Code 400
 >```
-phone is required
-```
+> phone is required
+>```
