@@ -1,12 +1,12 @@
 >### RestAssured_Learning
 >--------
 >#### Demo api call and assertion with rest assured
->API Endpoints: 
+>API Endpoint: 
 
 ```
 http://35.189.151.113:3000/product?page=${page}&limit=${limit}&productName${productName}=&minPrice${minPrice}=&maxPrice=${maxPrice}&productType=${productType}
 ```
->>### Request params
+>>### Request queries
 >- page
 >- limit
 >- productName
@@ -24,4 +24,21 @@ http://35.189.151.113:3000/product?page=${page}&limit=${limit}&productName${prod
 > ,{"ratings":[null],"_id":"5f378e427a39eba49dabefeb","productName":"iphone 10 plus","productType":"dien thoai","price":20010200,"inStock":1,"description":"testdescription","averageRating":null,"mainImgPath":"/node_server/storage/main/main1597476418107.jpg","__v":0,"link":"/assets/main?productName=iphone 10 plus"}
 > ,{"ratings":[null],"_id":"5f378e447a39eb26f8abefec","productName":"iphone 11 plus","productType":"dien thoai","price":20010200,"inStock":1,"description":"testdescription","averageRating":null,"mainImgPath":"/node_server/storage/main/main1597476420145.jpg","__v":0,"link":"/assets/main?productName=iphone 11 plus"}]
 ```
+API Endpont:
 
+```
+http://35.189.151.113:3000/payment
+```
+
+>>### Request body
+>- address :""
+>- email   :"" 
+>- name     :"test"
+>- phone    :""
+>- products :null
+
+>>### Response
+>#### Code 400
+>```
+phone is required
+```
