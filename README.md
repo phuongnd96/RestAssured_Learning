@@ -31,14 +31,13 @@ http://35.189.151.113:3000/product?page=${page}&limit=${limit}&productName${prod
 http://35.189.151.113:3000/payment
 >```
 
->```
 >>### Request body
 >- address :""
 >- email   :"" 
 >- name     :"test"
 >- phone    :""
 >- products :null
->```
+
 
 >>### Response
 >#### Code 400
